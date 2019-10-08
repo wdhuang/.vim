@@ -14,7 +14,7 @@ set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.DS_Store
 
 "display
 try
-    colorscheme desert
+    colorscheme gruvbox
 catch
 endtry
 set ruler
@@ -25,6 +25,7 @@ set laststatus=2
 set showmatch 
 set lazyredraw 
 
+
 "search
 set magic
 set hlsearch
@@ -32,9 +33,11 @@ set incsearch
 set ignorecase
 set smartcase
 
+
 "encoding
 set encoding=utf8
 set ffs=unix,dos,mac
+
 
 "indent and tab setting
 set expandtab
@@ -44,23 +47,39 @@ set tabstop=4
 set autoindent
 set smartindent
 
+
 "fold
 set foldenable
 set foldlevelstart=10
 set foldnestmax=10
 set foldmethod=indent
 
+
 "self-defined keymapping
+let mapleader = ','
+nnoremap <space> za
+vnoremap <space> zf
+nmap j gj
+nmap k gk
 nnoremap B ^
 nnoremap E $
 nnoremap $ <nop>
 nnoremap ^ <nop>
+
 
 "golang
 let g:go_fmt_command = "goimports"
 let g:go_def_mode='gopls'
 let g:go_info_mode='gopls'
 autocmd FileType go setlocal shiftwidth=4 tabstop=4
+
+
+"ale
+set omnifunc=ale#completion#OmniFunc
+let g:ale_completion_enabled = 1
+let g:ale_set_loclist = 0
+let g:ale_set_quickfix = 1
+
 
 "ctrlp
 let g:ctrlp_working_path_mode = 0
@@ -69,6 +88,7 @@ map <leader>j :CtrlP<cr>
 map <c-b> :CtrlPBuffer<cr>
 let g:ctrlp_max_height = 20
 let g:ctrlp_custom_ignore = 'node_modules\|^\.DS_Store\|^\.git'
+
 
 
 "lightline
