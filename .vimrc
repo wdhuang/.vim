@@ -23,7 +23,6 @@ set background=dark
 set cursorline
 set laststatus=2
 set showmatch 
-set mat=2
 set lazyredraw 
 
 "search
@@ -59,7 +58,8 @@ nnoremap ^ <nop>
 
 "golang
 let g:go_fmt_command = "goimports"
-let g:go_version_warning = 0
+let g:go_def_mode='gopls'
+let g:go_info_mode='gopls'
 autocmd FileType go setlocal shiftwidth=4 tabstop=4
 
 "ctrlp
@@ -68,7 +68,7 @@ let g:ctrlp_map = '<c-f>'
 map <leader>j :CtrlP<cr>
 map <c-b> :CtrlPBuffer<cr>
 let g:ctrlp_max_height = 20
-let g:ctrlp_custom_ignore = 'node_modules\|^\.DS_Store\|^\.git\|^\.coffee'
+let g:ctrlp_custom_ignore = 'node_modules\|^\.DS_Store\|^\.git'
 
 
 "lightline
