@@ -77,6 +77,7 @@ autocmd FileType go setlocal shiftwidth=4 tabstop=4
 "ale
 set omnifunc=ale#completion#OmniFunc
 let g:ale_completion_enabled = 1
+set completeopt-=preview
 let g:ale_set_loclist = 0
 let g:ale_set_quickfix = 1
 
