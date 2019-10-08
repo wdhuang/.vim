@@ -24,7 +24,7 @@
 	url = https://github.com/morhetz/gruvbox.git
 [submodule "pack/plugins/start/eunuch"]
 	path = pack/plugins/start/eunuch
-	url = https://tpope.io/vim/eunuch.git
+	url = https://github.com/tpope/vim-eunuch.git
 [submodule "pack/plugins/start/editorconfig-vim"]
 	path = pack/plugins/start/editorconfig-vim
 	url = https://github.com/editorconfig/editorconfig-vim.git
