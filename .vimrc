@@ -3,6 +3,7 @@ set history=500
 filetype plugin on
 filetype indent on
 syntax enable
+set hid
 set autoread
 set autowrite
 set autochdir
@@ -121,3 +122,5 @@ let g:lightline = {
 
 "tagbar
 let g:tagbar_ctags_bin = '/usr/local/bin/ctags'
+
+let g:netrw_liststyle = 3
