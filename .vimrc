@@ -58,6 +58,7 @@ set foldmethod=indent
 
 "self-defined keymapping
 let mapleader = ','
+let g:mapleader = ','
 nnoremap <space> za
 vnoremap <space> zf
 nmap j gj
@@ -122,5 +123,3 @@ let g:lightline = {
 
 "tagbar
 let g:tagbar_ctags_bin = '/usr/local/bin/ctags'
-
-let g:netrw_liststyle = 3
