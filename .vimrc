@@ -124,6 +124,10 @@ let g:lightline = {
 "tagbar
 let g:tagbar_ctags_bin = '/usr/local/bin/ctags'
 
+"nerdtree
+nmap <leader>n : NERDTreeToggle<CR>
+let NERDTreeQuitOnOpen=1
+
 " coc
 " Use tab for trigger completion with characters ahead and navigate.
 " Use command ':verbose imap <tab>' to make sure tab is not mapped by other plugin.
