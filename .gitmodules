@@ -7,9 +7,6 @@
 [submodule "pack/plugins/start/Dockerfile"]
 	path = pack/plugins/start/Dockerfile
 	url = https://github.com/ekalinin/Dockerfile.vim.git
-[submodule "pack/plugins/start/vim-go"]
-	path = pack/plugins/start/vim-go
-	url = https://github.com/fatih/vim-go.git
 [submodule "pack/plugins/start/vim-fugitive"]
 	path = pack/plugins/start/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive.git
@@ -28,9 +25,6 @@
 [submodule "pack/plugins/start/editorconfig-vim"]
 	path = pack/plugins/start/editorconfig-vim
 	url = https://github.com/editorconfig/editorconfig-vim.git
-[submodule "pack/plugins/start/tagbar"]
-	path = pack/plugins/start/tagbar
-	url = https://github.com/majutsushi/tagbar.git
 [submodule "/Users/wdhuang/.vim/pack/plugins/start/nerdtree"]
 	path = /Users/wdhuang/.vim/pack/plugins/start/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
