@@ -71,13 +71,6 @@ nnoremap $ <nop>
 nnoremap ^ <nop>
 
 
-"golang
-let g:go_fmt_command = "goimports"
-let g:go_def_mode='gopls'
-let g:go_info_mode='gopls'
-autocmd FileType go setlocal shiftwidth=4 tabstop=4
-
-
 "ale
 set completeopt-=preview
 let g:ale_set_loclist = 0
@@ -121,12 +114,10 @@ let g:lightline = {
       \ }
 
 
-"tagbar
-let g:tagbar_ctags_bin = '/usr/local/bin/ctags'
-
 "nerdtree
 nmap <leader>n : NERDTreeToggle<CR>
 let NERDTreeQuitOnOpen=1
+
 
 " coc
 " Use tab for trigger completion with characters ahead and navigate.
