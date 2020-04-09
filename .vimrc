@@ -45,8 +45,8 @@ set ffs=unix,dos,mac
 "indent and tab setting
 set expandtab
 set smarttab
-set shiftwidth=4
-set tabstop=4
+set shiftwidth=2
+set tabstop=2
 set autoindent
 set smartindent
 
