@@ -116,7 +116,7 @@ let g:lightline = {
 
 "nerdtree
 nmap <leader>n : NERDTreeToggle<CR>
-let NERDTreeQuitOnOpen=1
+" let NERDTreeQuitOnOpen=1
 
 
 " coc
