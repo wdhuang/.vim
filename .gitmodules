@@ -25,6 +25,6 @@
 [submodule "pack/plugins/start/editorconfig-vim"]
 	path = pack/plugins/start/editorconfig-vim
 	url = https://github.com/editorconfig/editorconfig-vim.git
-[submodule "/Users/wdhuang/.vim/pack/plugins/start/nerdtree"]
-	path = /Users/wdhuang/.vim/pack/plugins/start/nerdtree
-	url = https://github.com/scrooloose/nerdtree.git
+[submodule "pack/plugins/start/nerdtree"]
+	path = pack/plugins/start/nerdtree
+	url = https://github.com/preservim/nerdtree.git
