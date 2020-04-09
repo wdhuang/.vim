@@ -28,3 +28,6 @@
 [submodule "pack/plugins/start/nerdtree"]
 	path = pack/plugins/start/nerdtree
 	url = https://github.com/preservim/nerdtree.git
+[submodule "pack/plugins/start/typescript-vim"]
+	path = pack/plugins/start/typescript-vim
+	url = https://github.com/leafgarland/typescript-vim.git
