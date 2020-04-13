@@ -16,17 +16,18 @@ set updatetime=300
 
 "display
 try
-    colorscheme gruvbox
+    colorscheme solarized
 catch
 endtry
 set ruler
 set number
-set background=dark
+set background=light
 set cursorline
 set laststatus=2
 set cmdheight=2
 set showmatch 
 set lazyredraw 
+set noshowmode
 
 
 "search
@@ -89,20 +90,20 @@ let g:ctrlp_custom_ignore = 'node_modules\|^\.DS_Store\|^\.git'
 
 "lightline
 let g:lightline = {
-      \ 'colorscheme': 'wombat',
-      \ }
-
-let g:lightline = {
-      \ 'colorscheme': 'wombat',
+      \ 'colorscheme': 'solarized',
       \ 'active': {
       \   'left': [ ['mode', 'paste'],
-      \             ['fugitive', 'readonly', 'filename', 'modified'] ],
+      \             ['fugitive', 'cocstatus', 'currentfunction', 'readonly', 'filename', 'modified'] ],
       \   'right': [ [ 'lineinfo' ], ['percent'] ]
       \ },
       \ 'component': {
       \   'readonly': '%{&filetype=="help"?"":&readonly?"🔒":""}',
       \   'modified': '%{&filetype=="help"?"":&modified?"+":&modifiable?"":"-"}',
       \   'fugitive': '%{exists("*fugitive#head")?fugitive#head():""}'
+      \ },
+      \ 'component_function': {
+      \   'cocstatus': 'coc#status',
+      \   'currentfunction': 'CocCurrentFunction'
       \ },
       \ 'component_visible_condition': {
       \   'readonly': '(&filetype!="help"&& &readonly)',
