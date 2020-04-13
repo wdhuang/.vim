@@ -16,12 +16,12 @@ set updatetime=300
 
 "display
 try
-    colorscheme solarized
+    colorscheme gruvbox
 catch
 endtry
 set ruler
 set number
-set background=light
+set background=dark
 set cursorline
 set laststatus=2
 set cmdheight=2
@@ -90,7 +90,7 @@ let g:ctrlp_custom_ignore = 'node_modules\|^\.DS_Store\|^\.git'
 
 "lightline
 let g:lightline = {
-      \ 'colorscheme': 'solarized',
+      \ 'colorscheme': 'wombat',
       \ 'active': {
       \   'left': [ ['mode', 'paste'],
       \             ['fugitive', 'cocstatus', 'currentfunction', 'readonly', 'filename', 'modified'] ],
